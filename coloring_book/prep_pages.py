@@ -106,13 +106,13 @@ def main():
 
     ordered = [images[n] for n in sorted(images)]
     # PDFs for each 10-page block
-    blocks = [(1, 10), (11, 20), (21, 30), (31, 40)]
+    blocks = [(1, 10), (11, 20), (21, 30), (31, 40), (41, 50)]
     for lo, hi in blocks:
         if len(ordered) >= hi:
             write_pdf(f"Animal_Coloring_Book_Pages_{lo}-{hi}.pdf", ordered[lo - 1:hi])
     # complete book
-    if len(ordered) >= 40:
-        write_pdf("Animal_Coloring_Book_Complete_1-40.pdf", ordered)
+    if len(ordered) >= 50:
+        write_pdf("Animal_Coloring_Book_Complete_1-50.pdf", ordered)
 
     # PNG zips per block (skip the first block, already shipped as 1-10 zip)
     for lo, hi in blocks[1:]:
