@@ -1,5 +1,5 @@
 ANIMAL COLORING BOOK - IMAGE GENERATION PROMPTS
-Pages 1-30 | A4 Portrait (1:1.414) | Black & White Line Art
+Pages 1-40 | A4 Portrait (1:1.414) | Black & White Line Art
 ==========================================================
 
 HOW TO USE
@@ -26,6 +26,11 @@ CONTENT MAP
 - Pages 25-26: Forest (Squirrel, Hedgehog)
 - Pages 27-28: Savanna (Rhino, Cheetah)
 - Pages 29-30: Farm (Duck, Goat)
+- Pages 31-32: Jungle (Panda, Chameleon)
+- Pages 33-34: Ocean (Penguin, Shark)
+- Pages 35-36: Forest (Rabbit, Raccoon)
+- Pages 37-38: Savanna (Meerkat, Ostrich)
+- Pages 39-40: Farm (Turkey, Donkey)
 
 ----------------------------------------------------------
 PAGE 1 - JUNGLE: Tiger Cub
@@ -496,6 +501,159 @@ PAGE 30 - FARM: Goat
 Pure black-and-white coloring book page for children. A happy goat
 with little horns standing on a small hill near a farmhouse, with a
 wooden fence, flowers, an apple tree and clouds. Pure black outline
+vector line art on a solid pure white background: no shading, no
+grayscale, no gray fills, no color, no gradients, no textures - only
+crisp black outlines with white interiors. Bold, clean, continuous
+thick outlines, high contrast, simplified friendly cartoon style,
+medium level of detail with large simple shapes. Vertical A4 portrait
+page, aspect ratio 1:1.414, full-page composition, all artwork kept
+inside a clean white margin around the edges. No text, no letters,
+no watermark, no signature, no border, no frame.
+
+----------------------------------------------------------
+PAGE 31 - JUNGLE: Panda
+----------------------------------------------------------
+Pure black-and-white coloring book page for children. A cute panda
+cub sitting among bamboo stalks and jungle leaves, with a butterfly
+and small flowers around. Pure black outline vector line art on a
+solid pure white background: no shading, no grayscale, no gray fills,
+no color, no gradients, no textures - only crisp black outlines with
+white interiors. Bold, clean, continuous thick outlines, high
+contrast, simplified friendly cartoon style, medium level of detail
+with large simple shapes. Vertical A4 portrait page, aspect ratio
+1:1.414, full-page composition, all artwork kept inside a clean white
+margin around the edges. No text, no letters, no watermark, no
+signature, no border, no frame.
+
+----------------------------------------------------------
+PAGE 32 - JUNGLE: Chameleon
+----------------------------------------------------------
+Pure black-and-white coloring book page for children. A friendly
+chameleon with a curled tail and big round eyes sitting on a jungle
+branch, with large leaves, vines, a tiny snail and flowers. Pure
+black outline vector line art on a solid pure white background: no
+shading, no grayscale, no gray fills, no color, no gradients, no
+textures - only crisp black outlines with white interiors. Bold,
+clean, continuous thick outlines, high contrast, simplified friendly
+cartoon style, medium level of detail with large simple shapes.
+Vertical A4 portrait page, aspect ratio 1:1.414, full-page
+composition, all artwork kept inside a clean white margin around the
+edges. No text, no letters, no watermark, no signature, no border,
+no frame.
+
+----------------------------------------------------------
+PAGE 33 - OCEAN: Penguin
+----------------------------------------------------------
+Pure black-and-white coloring book page for children. A cute penguin
+standing on an ice floe by the ocean, with gentle waves, small fish
+jumping, a puff of clouds and snowflakes. Pure black outline vector
+line art on a solid pure white background: no shading, no grayscale,
+no gray fills, no color, no gradients, no textures - only crisp black
+outlines with white interiors. Bold, clean, continuous thick
+outlines, high contrast, simplified friendly cartoon style, medium
+level of detail with large simple shapes. Vertical A4 portrait page,
+aspect ratio 1:1.414, full-page composition, all artwork kept inside
+a clean white margin around the edges. No text, no letters, no
+watermark, no signature, no border, no frame.
+
+----------------------------------------------------------
+PAGE 34 - OCEAN: Shark
+----------------------------------------------------------
+Pure black-and-white coloring book page for children. A friendly
+smiling shark with a big fin swimming in the ocean, with small fish,
+bubbles, coral, seaweed and waves. Pure black outline vector line art
+on a solid pure white background: no shading, no grayscale, no gray
+fills, no color, no gradients, no textures - only crisp black
+outlines with white interiors. Bold, clean, continuous thick
+outlines, high contrast, simplified friendly cartoon style, medium
+level of detail with large simple shapes. Vertical A4 portrait page,
+aspect ratio 1:1.414, full-page composition, all artwork kept inside
+a clean white margin around the edges. No text, no letters, no
+watermark, no signature, no border, no frame.
+
+----------------------------------------------------------
+PAGE 35 - FOREST: Rabbit
+----------------------------------------------------------
+Pure black-and-white coloring book page for children. A cute bunny
+rabbit with long ears sitting in a forest clearing, with mushrooms,
+flowers, ferns and a butterfly nearby. Pure black outline vector line
+art on a solid pure white background: no shading, no grayscale, no
+gray fills, no color, no gradients, no textures - only crisp black
+outlines with white interiors. Bold, clean, continuous thick
+outlines, high contrast, simplified friendly cartoon style, medium
+level of detail with large simple shapes. Vertical A4 portrait page,
+aspect ratio 1:1.414, full-page composition, all artwork kept inside
+a clean white margin around the edges. No text, no letters, no
+watermark, no signature, no border, no frame.
+
+----------------------------------------------------------
+PAGE 36 - FOREST: Raccoon
+----------------------------------------------------------
+Pure black-and-white coloring book page for children. A cute raccoon
+with a striped tail sitting on a log in the forest, with berries,
+mushrooms, ferns, flowers and falling leaves. Pure black outline
+vector line art on a solid pure white background: no shading, no
+grayscale, no gray fills, no color, no gradients, no textures - only
+crisp black outlines with white interiors. Bold, clean, continuous
+thick outlines, high contrast, simplified friendly cartoon style,
+medium level of detail with large simple shapes. Vertical A4 portrait
+page, aspect ratio 1:1.414, full-page composition, all artwork kept
+inside a clean white margin around the edges. No text, no letters,
+no watermark, no signature, no border, no frame.
+
+----------------------------------------------------------
+PAGE 37 - SAVANNA: Meerkat
+----------------------------------------------------------
+Pure black-and-white coloring book page for children. A cute meerkat
+standing upright on a sandy mound on the savanna, with the sun and
+rays, grass tufts, rocks, an acacia tree and a small cactus. Pure
+black outline vector line art on a solid pure white background: no
+shading, no grayscale, no gray fills, no color, no gradients, no
+textures - only crisp black outlines with white interiors. Bold,
+clean, continuous thick outlines, high contrast, simplified friendly
+cartoon style, medium level of detail with large simple shapes.
+Vertical A4 portrait page, aspect ratio 1:1.414, full-page
+composition, all artwork kept inside a clean white margin around the
+edges. No text, no letters, no watermark, no signature, no border,
+no frame.
+
+----------------------------------------------------------
+PAGE 38 - SAVANNA: Ostrich
+----------------------------------------------------------
+Pure black-and-white coloring book page for children. A friendly
+ostrich with a long neck and fluffy feathers walking on the savanna
+grassland, with the sun and rays, grass tufts, rocks and clouds.
+Pure black outline vector line art on a solid pure white background:
+no shading, no grayscale, no gray fills, no color, no gradients, no
+textures - only crisp black outlines with white interiors. Bold,
+clean, continuous thick outlines, high contrast, simplified friendly
+cartoon style, medium level of detail with large simple shapes.
+Vertical A4 portrait page, aspect ratio 1:1.414, full-page
+composition, all artwork kept inside a clean white margin around the
+edges. No text, no letters, no watermark, no signature, no border,
+no frame.
+
+----------------------------------------------------------
+PAGE 39 - FARM: Turkey
+----------------------------------------------------------
+Pure black-and-white coloring book page for children. A proud turkey
+with a big fan tail standing in the farmyard, with pumpkins, hay
+bales, a wooden fence, flowers and the sun with rays. Pure black
+outline vector line art on a solid pure white background: no shading,
+no grayscale, no gray fills, no color, no gradients, no textures -
+only crisp black outlines with white interiors. Bold, clean,
+continuous thick outlines, high contrast, simplified friendly cartoon
+style, medium level of detail with large simple shapes. Vertical A4
+portrait page, aspect ratio 1:1.414, full-page composition, all
+artwork kept inside a clean white margin around the edges. No text,
+no letters, no watermark, no signature, no border, no frame.
+
+----------------------------------------------------------
+PAGE 40 - FARM: Donkey
+----------------------------------------------------------
+Pure black-and-white coloring book page for children. A happy donkey
+with long ears standing near a wooden fence on the farm, with a barn
+in the background, hay bales, flowers and clouds. Pure black outline
 vector line art on a solid pure white background: no shading, no
 grayscale, no gray fills, no color, no gradients, no textures - only
 crisp black outlines with white interiors. Bold, clean, continuous
