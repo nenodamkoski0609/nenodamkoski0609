@@ -1,13 +1,20 @@
 #!/usr/bin/env python3
-"""Print-prep for the Animal Coloring Book pages 1-10.
+"""Print-prep for the Animal Coloring Book pages 1-20.
 
 Input : coloring_book/raw/pageNN.png (AI-generated line art)
-Output: coloring_book/final/pageNN.png  (A4 @ 300 DPI, pure black/white, framed)
-        coloring_book/Animal_Coloring_Book_Pages_1-10.pdf (print-ready PDF, no cover)
+Output: coloring_book/final/pageNN.png   (A4 @ 300 DPI, pure black/white, framed)
+        Animal_Coloring_Book_Pages_1-10.pdf
+        Animal_Coloring_Book_Pages_11-20.pdf
+        Animal_Coloring_Book_Complete_1-20.pdf
+        Animal_Coloring_Book_Pages_11-20_PNG.zip
 """
-import glob, os, sys
+import glob
+import os
+import sys
+import zipfile
+
 import numpy as np
-from PIL import Image, ImageDraw, ImageFont, ImageFilter
+from PIL import Image, ImageDraw, ImageFilter, ImageFont
 
 RAW = "raw"
 OUT = "final"
@@ -72,25 +79,45 @@ def prepare(page_path, page_num):
     arr = np.where(arr >= 128, 255, 0).astype(np.uint8)
     img = Image.fromarray(arr, mode="L").convert("RGB")
     img.info["dpi"] = (300, 300)
+
     out_path = os.path.join(OUT, f"page{page_num:02d}.png")
     img.save(out_path)
     return img, out_path, black
 
 
+def write_pdf(path, finals, dpi=300.0):
+    finals[0].save(path, save_all=True, append_images=finals[1:], resolution=dpi)
+    print("PDF written:", path, os.path.getsize(path), "bytes")
+
+
 def main():
-    finals = []
+    pages = sorted(glob.glob(os.path.join(RAW, "page*.png")))
+    num = lambda p: int(os.path.basename(p)[4:6])
+
+    images = {}  # page_num -> PIL image
     print(f"{'page':6s} {'black%':>7s} {'ink bbox (x0,y0,x1,y1)':>30s}")
-    for p in sorted(glob.glob(os.path.join(RAW, "page*.png"))):
-        n = int(os.path.basename(p)[4:6])
+    for p in pages:
+        n = num(p)
         img, out_path, black = prepare(p, n)
-        finals.append(img)
+        images[n] = img
         nz = np.argwhere(black)
         bbox = (nz[:, 1].min(), nz[:, 0].min(), nz[:, 1].max(), nz[:, 0].max()) if len(nz) else None
         print(f"page{n:02d}  {black.mean()*100:6.2f}%  {bbox}")
-    # assemble print-ready PDF (A4 pages, 300 DPI, no cover)
-    pdf_path = "Animal_Coloring_Book_Pages_1-10.pdf"
-    finals[0].save(pdf_path, save_all=True, append_images=finals[1:], resolution=300.0)
-    print("PDF written:", pdf_path, os.path.getsize(pdf_path), "bytes")
+
+    ordered = [images[n] for n in sorted(images)]
+    if len(ordered) >= 10:
+        write_pdf("Animal_Coloring_Book_Pages_1-10.pdf", ordered[:10])
+    if len(ordered) >= 20:
+        write_pdf("Animal_Coloring_Book_Pages_11-20.pdf", ordered[10:20])
+        write_pdf("Animal_Coloring_Book_Complete_1-20.pdf", ordered)
+
+    # PNG zip for pages 11-20
+    if len(ordered) >= 20:
+        with zipfile.ZipFile("Animal_Coloring_Book_Pages_11-20_PNG.zip", "w", zipfile.ZIP_DEFLATED) as z:
+            for n in range(11, 21):
+                z.write(os.path.join(OUT, f"page{n:02d}.png"), f"page{n:02d}.png")
+        print("ZIP written: Animal_Coloring_Book_Pages_11-20_PNG.zip",
+              os.path.getsize("Animal_Coloring_Book_Pages_11-20_PNG.zip"), "bytes")
 
 
 if __name__ == "__main__":
