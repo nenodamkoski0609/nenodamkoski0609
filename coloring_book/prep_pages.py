@@ -105,19 +105,23 @@ def main():
         print(f"page{n:02d}  {black.mean()*100:6.2f}%  {bbox}")
 
     ordered = [images[n] for n in sorted(images)]
-    if len(ordered) >= 10:
-        write_pdf("Animal_Coloring_Book_Pages_1-10.pdf", ordered[:10])
-    if len(ordered) >= 20:
-        write_pdf("Animal_Coloring_Book_Pages_11-20.pdf", ordered[10:20])
-        write_pdf("Animal_Coloring_Book_Complete_1-20.pdf", ordered)
+    # PDFs for each 10-page block
+    blocks = [(1, 10), (11, 20), (21, 30)]
+    for lo, hi in blocks:
+        if len(ordered) >= hi:
+            write_pdf(f"Animal_Coloring_Book_Pages_{lo}-{hi}.pdf", ordered[lo - 1:hi])
+    # complete book
+    if len(ordered) >= 30:
+        write_pdf("Animal_Coloring_Book_Complete_1-30.pdf", ordered)
 
-    # PNG zip for pages 11-20
-    if len(ordered) >= 20:
-        with zipfile.ZipFile("Animal_Coloring_Book_Pages_11-20_PNG.zip", "w", zipfile.ZIP_DEFLATED) as z:
-            for n in range(11, 21):
-                z.write(os.path.join(OUT, f"page{n:02d}.png"), f"page{n:02d}.png")
-        print("ZIP written: Animal_Coloring_Book_Pages_11-20_PNG.zip",
-              os.path.getsize("Animal_Coloring_Book_Pages_11-20_PNG.zip"), "bytes")
+    # PNG zips per block (skip the first block, already shipped as 1-10 zip)
+    for lo, hi in blocks[1:]:
+        if len(ordered) >= hi:
+            zpath = f"Animal_Coloring_Book_Pages_{lo}-{hi}_PNG.zip"
+            with zipfile.ZipFile(zpath, "w", zipfile.ZIP_DEFLATED) as z:
+                for n in range(lo, hi + 1):
+                    z.write(os.path.join(OUT, f"page{n:02d}.png"), f"page{n:02d}.png")
+            print("ZIP written:", zpath, os.path.getsize(zpath), "bytes")
 
 
 if __name__ == "__main__":
